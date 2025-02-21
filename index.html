@@ -3,25 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>My API Test</title>
   </head>
   <body>
-    <div>
-      <p>
-        Inspect this document, and check the console tab to see if your data is
-        there.
-      </p>
-    </div>
+    <ul id="restaurant-list"></ul>
 
-    <script>
-      const apiUrl =
-        "https://iskarr.github.io/austindonovan.github.io/api/business.json";
-
-      fetch(apiUrl)
-        .then((response) => response.json())
-        .then((jsObject) => {
-          console.log(jsObject);
-        });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
